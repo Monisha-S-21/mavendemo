@@ -5,7 +5,7 @@ pipeline {
     }
     environment {
         SONAR_TOKEN = credentials('Sonarqube-token') // Replace with your credentials ID for the SonarQube token
-        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-17'
+        JAVA_HOME = 'C:\Program Files\Java\jdk-17'
         PATH = "${JAVA_HOME}\\bin;${env.PATH}"
     }
     stages {
